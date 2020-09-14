@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/emiile-8/Documents/Git/assignment-one-cli/src/main.cpp
+sstream
+-
+string
+-
+stdexcept
+-
+thread
+-
+math.h
+-
+stdio.h
+-
+sys/sysinfo.h
+-
+sys/utsname.h
+-
+sys/wait.h
+-
+unistd.h
+-
+

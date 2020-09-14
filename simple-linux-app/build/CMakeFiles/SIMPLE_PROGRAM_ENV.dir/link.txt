@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -pthread -no-pie  -rdynamic CMakeFiles/SIMPLE_PROGRAM_ENV.dir/src/main.cpp.o  -o ../bin/SIMPLE_PROGRAM_ENV 

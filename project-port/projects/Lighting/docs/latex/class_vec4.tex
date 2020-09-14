@@ -1,0 +1,130 @@
+\hypertarget{class_vec4}{}\doxysection{Vec4 Class Reference}
+\label{class_vec4}\index{Vec4@{Vec4}}
+
+
+{\ttfamily \#include $<$matlib.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vec4_a52d9b4f2853c7f4737224afd54eb1cdd}{Vec4}} (float x=0, float y=0, float z=0, float w=0)
+\item 
+\mbox{\hyperlink{class_vec4_a7f09b31ccbb6c8dec91e179821f9b9ed}{Vec4}} (const \mbox{\hyperlink{class_vec4}{Vec4}} \&other)
+\item 
+float \& \mbox{\hyperlink{class_vec4_a2222caa55c0c05bc9910337aa4c33af8}{operator\mbox{[}$\,$\mbox{]}}} (int index)
+\item 
+\mbox{\hyperlink{class_vec4}{Vec4}} \& \mbox{\hyperlink{class_vec4_a479a40aea67013394e19ad162de80d60}{operator+}} (const \mbox{\hyperlink{class_vec4}{Vec4}} \&other)
+\item 
+\mbox{\hyperlink{class_vec4}{Vec4}} \& \mbox{\hyperlink{class_vec4_a4b311921f1541d26a19b8b73d4df4f54}{operator-\/}} (const \mbox{\hyperlink{class_vec4}{Vec4}} \&other)
+\item 
+\mbox{\hyperlink{class_vec4}{Vec4}} \& \mbox{\hyperlink{class_vec4_a1544b8e19bf80d0fb13ce7cc644fc164}{operator$\ast$}} (const float \&other)
+\item 
+float \mbox{\hyperlink{class_vec4_a81841fec0c8036897b737f34d979165a}{Length}} ()
+\item 
+\mbox{\hyperlink{class_vec4}{Vec4}} \& \mbox{\hyperlink{class_vec4_a448bb7f379ece6998f8693402b637a2a}{Normalize}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{class_vec4_ae01ad8f99c154340e08f74278525af53}{Dot\+Product}} (\mbox{\hyperlink{class_vec4}{Vec4}} \&x, \mbox{\hyperlink{class_vec4}{Vec4}} \&y)
+\item 
+static \mbox{\hyperlink{class_vec4}{Vec4}} \mbox{\hyperlink{class_vec4_a7ba54e1ad7167b960193b48305eeeeac}{Cross\+Product}} (\mbox{\hyperlink{class_vec4}{Vec4}} \&x, \mbox{\hyperlink{class_vec4}{Vec4}} \&y)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A four dimensional vector. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_vec4_a52d9b4f2853c7f4737224afd54eb1cdd}\label{class_vec4_a52d9b4f2853c7f4737224afd54eb1cdd}} 
+\index{Vec4@{Vec4}!Vec4@{Vec4}}
+\index{Vec4@{Vec4}!Vec4@{Vec4}}
+\doxysubsubsection{\texorpdfstring{Vec4()}{Vec4()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Vec4\+::\+Vec4 (\begin{DoxyParamCaption}\item[{float}]{x = {\ttfamily 0},  }\item[{float}]{y = {\ttfamily 0},  }\item[{float}]{z = {\ttfamily 0},  }\item[{float}]{w = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new homogenous 4D vector.
+
+Multiplication, addition, subtraction, multiplication, normalize, dot product and cross product all only act on the x/y/z axes. The w axis is reserved for matrix operations.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & is the x value. \\
+\hline
+{\em y} & is the y value. \\
+\hline
+{\em z} & is the z value. \\
+\hline
+{\em w} & is the w value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vec4_a7f09b31ccbb6c8dec91e179821f9b9ed}\label{class_vec4_a7f09b31ccbb6c8dec91e179821f9b9ed}} 
+\index{Vec4@{Vec4}!Vec4@{Vec4}}
+\index{Vec4@{Vec4}!Vec4@{Vec4}}
+\doxysubsubsection{\texorpdfstring{Vec4()}{Vec4()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Vec4\+::\+Vec4 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vec4}{Vec4}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copy constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_vec4_a7ba54e1ad7167b960193b48305eeeeac}\label{class_vec4_a7ba54e1ad7167b960193b48305eeeeac}} 
+\index{Vec4@{Vec4}!CrossProduct@{CrossProduct}}
+\index{CrossProduct@{CrossProduct}!Vec4@{Vec4}}
+\doxysubsubsection{\texorpdfstring{CrossProduct()}{CrossProduct()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_vec4}{Vec4}} Vec4\+::\+Cross\+Product (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec4}{Vec4}} \&}]{x,  }\item[{\mbox{\hyperlink{class_vec4}{Vec4}} \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns the cross product of two vectors. \mbox{\Hypertarget{class_vec4_ae01ad8f99c154340e08f74278525af53}\label{class_vec4_ae01ad8f99c154340e08f74278525af53}} 
+\index{Vec4@{Vec4}!DotProduct@{DotProduct}}
+\index{DotProduct@{DotProduct}!Vec4@{Vec4}}
+\doxysubsubsection{\texorpdfstring{DotProduct()}{DotProduct()}}
+{\footnotesize\ttfamily static float Vec4\+::\+Dot\+Product (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec4}{Vec4}} \&}]{x,  }\item[{\mbox{\hyperlink{class_vec4}{Vec4}} \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns the dot product of two vectors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & is the first vector. \\
+\hline
+{\em y} & is the second vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vec4_a81841fec0c8036897b737f34d979165a}\label{class_vec4_a81841fec0c8036897b737f34d979165a}} 
+\index{Vec4@{Vec4}!Length@{Length}}
+\index{Length@{Length}!Vec4@{Vec4}}
+\doxysubsubsection{\texorpdfstring{Length()}{Length()}}
+{\footnotesize\ttfamily float Vec4\+::\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculates the length of the xyz vector. \mbox{\Hypertarget{class_vec4_a448bb7f379ece6998f8693402b637a2a}\label{class_vec4_a448bb7f379ece6998f8693402b637a2a}} 
+\index{Vec4@{Vec4}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!Vec4@{Vec4}}
+\doxysubsubsection{\texorpdfstring{Normalize()}{Normalize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vec4}{Vec4}}\& Vec4\+::\+Normalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Normalizes this vector. \mbox{\Hypertarget{class_vec4_a1544b8e19bf80d0fb13ce7cc644fc164}\label{class_vec4_a1544b8e19bf80d0fb13ce7cc644fc164}} 
+\index{Vec4@{Vec4}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vec4@{Vec4}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vec4}{Vec4}}\& Vec4\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const float \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Multiplication overload. \mbox{\Hypertarget{class_vec4_a479a40aea67013394e19ad162de80d60}\label{class_vec4_a479a40aea67013394e19ad162de80d60}} 
+\index{Vec4@{Vec4}!operator+@{operator+}}
+\index{operator+@{operator+}!Vec4@{Vec4}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vec4}{Vec4}}\& Vec4\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vec4}{Vec4}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Addition overload. \mbox{\Hypertarget{class_vec4_a4b311921f1541d26a19b8b73d4df4f54}\label{class_vec4_a4b311921f1541d26a19b8b73d4df4f54}} 
+\index{Vec4@{Vec4}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vec4@{Vec4}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vec4}{Vec4}}\& Vec4\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vec4}{Vec4}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Subtraction overload. \mbox{\Hypertarget{class_vec4_a2222caa55c0c05bc9910337aa4c33af8}\label{class_vec4_a2222caa55c0c05bc9910337aa4c33af8}} 
+\index{Vec4@{Vec4}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vec4@{Vec4}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily float\& Vec4\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Index overload with security bounds. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+code/\mbox{\hyperlink{matlib_8h}{matlib.\+h}}\end{DoxyCompactItemize}

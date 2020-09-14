@@ -1,0 +1,3 @@
+Emil Lindgren (emiile-8@student.ltu.se)
+
+Half float header file Copyright (c) 2012-2019 Christian Rau under the MIT license (see LICENCE).

@@ -1,0 +1,46 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "autorun",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "autodelete",
+                "autocmake",
+                "automake"
+            ]
+        },
+        {
+            "label": "autodelete",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "-rf",
+                "./bin",
+                "./build"
+            ]
+        },
+        {
+            "label": "autocmake",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-S",
+                "./",
+                "-B",
+                "./build"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "label": "automake",
+            "type": "shell",
+            "command": "make",
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            }
+        }
+    ]
+}
