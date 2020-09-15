@@ -2,6 +2,8 @@
 
 ## Setup
 - Run `sh ./compile.sh` in this folder to configure and compile the executable.
+- Using the `-C` flag will build and compile the project with CMAKE and MAKE.
+- Using the `-G` flag will compile the project with GCC alone.
 - After this simply navigate to the generated `/bin` folder to execute.
 
 ## Execution
