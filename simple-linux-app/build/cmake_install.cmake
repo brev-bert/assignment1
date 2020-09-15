@@ -1,4 +1,4 @@
-# Install script for directory: /home/emiile-8/Documents/Git/assignment-one-cli
+# Install script for directory: /home/emiile-8/Documents/Git/assignment1/simple-linux-app
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/emiile-8/Documents/Git/assignment-one-cli/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/emiile-8/Documents/Git/assignment1/simple-linux-app/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

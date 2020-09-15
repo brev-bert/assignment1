@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/emiile-8/Documents/Git/assignment-one-cli/src/main.cpp" "/home/emiile-8/Documents/Git/assignment-one-cli/build/CMakeFiles/SIMPLE_PROGRAM_ENV.dir/src/main.cpp.o"
+  "/home/emiile-8/Documents/Git/assignment1/simple-linux-app/src/main.cpp" "/home/emiile-8/Documents/Git/assignment1/simple-linux-app/build/CMakeFiles/SIMPLE_PROGRAM_ENV.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

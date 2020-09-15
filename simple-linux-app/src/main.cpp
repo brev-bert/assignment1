@@ -89,6 +89,12 @@ void thread_master(int x) {
 
 int main(int argc, char *argv[])
 {
+    if (argc == 1) {
+            printf("Usage:\n");
+            printf("    -i          Info about this computer.\n");
+            printf("    -f <num>    Spawns number of worker forks.\n");
+            printf("    -t <num>    Spawns number of worker threads.\n");
+    }
     // For each arg in argv
     for (int i = 0; i < argc; i++) {
 
@@ -138,7 +144,6 @@ int main(int argc, char *argv[])
             }
         }
     }
-
     exit(EXIT_SUCCESS);
 
 }

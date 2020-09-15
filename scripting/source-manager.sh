@@ -56,14 +56,13 @@ rename () {
         if grep "// $name" -q "$file" ; then
             echo "Header found in '$file', changing name."
 
-            # get extensionless name
-            newname="${name%.*}.hpp"
+            # # get extensionless name
+            # newname="${name%.*}.hpp"
             # load file as string into NEW after replacing name
-            NEW=$(sed -e "s/\/\/ ${name}/\/\/ ${newname}/" "$file")
-            # pipe modified contents to new file
-            echo "$NEW" > "$newname"
-            # remove old file
-            rm -f "$file"
+            sed -i "s/\/\/ ${name%.*}.*/\/\/ ${name%.*}.hpp/" "$file"
+
+            # move file to new name
+            mv "$file" "${file%.*}.hpp"
         fi
     done
 }
