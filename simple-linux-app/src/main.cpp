@@ -57,6 +57,7 @@ void fork_master(int x) {
     for (int i = 1; i <= x; i++) {
         // If child.
         if (fork() == 0) {
+            printf("Hello I am fork I have PID: %d\n", getpid());
             task();
             exit(EXIT_SUCCESS);
         }
@@ -116,8 +117,6 @@ int main(int argc, char *argv[])
 
             // Use try so conversion error can be caught.
             try {
-                printf("Hello I am fork I have PID: %d\n", getpid());
-
                 // Execute fork mastery.
                 fork_master(std::stoi(argv[i+1]));
             }
